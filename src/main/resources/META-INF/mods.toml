@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT License"
+issueTrackerURL="https://github.com/Mrthomas20121/EidolonTweaker/issues"
+
+[[mods]]
+modId="eidolon_tweaker"
+version="1.16.5-1.1.2"
+displayName="Foregoing Tweaker"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/eidolon_tweaker"
+authors="Mrthomas20121"
+description='''
+Add Crafttweaker support to Eidolon
+'''
+
+[[dependencies.eidolon_tweaker]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.eidolon_tweaker]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.eidolon_tweaker]]
+	modId = "crafttweaker"
+	mandatory = true
+	versionRange = "[7.1,)"
+	ordering = "NONE"
+	side = "BOTH"
