@@ -2,8 +2,12 @@
   "nav": {
     "Mods": {
       "Eidolon": {
-        "CrucibleRecipe": "Mods/Eidolon/CrucibleRecipe.md",
-        "WorktableRecipe": "Mods/Eidolon/WorktableRecipe.md"
+        "Crucible": "mods/eidolon/Crucible.md",
+        "Worktable": "mods/eidolon/Worktable.md",
+        "Api": {
+          "CrucibleRecipeFunction": "mods/eidolon/api/CrucibleRecipeFunction.md",
+          "WorktableRecipeFunction": "mods/eidolon/api/WorktableRecipeFunction.md"
+        }
       }
     }
   }

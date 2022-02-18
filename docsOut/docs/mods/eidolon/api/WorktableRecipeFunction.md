@@ -1,4 +1,4 @@
-# WorktableRecipe
+# WorktableRecipeFunction
 
 This class was added by a mod with mod-id `eidolon_tweaker`. So you need to have this mod installed if you want to use this feature.
 
@@ -6,27 +6,27 @@ This class was added by a mod with mod-id `eidolon_tweaker`. So you need to have
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
 ```zenscript
-import mods.eidolon.WorktableRecipe;
+import mods.eidolon.api.WorktableRecipeFunction;
 ```
 
 
-## Static Methods
+## Methods
 
-:::group{name=register}
+:::group{name=process}
 
-Return Type: void
+Return Type: [IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-WorktableRecipe.register(name as string, core as IItemStack[], extra as IItemStack[], result as IItemStack) as void
+WorktableRecipeFunction.process(usualOut as IItemStack, core as IItemStack[], extra as IItemStack[]) as IItemStack
 ```
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| name | string | No Description Provided |
+| usualOut | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 | core | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
 | extra | [IItemStack](/vanilla/api/items/IItemStack)[] | No Description Provided |
-| result | [IItemStack](/vanilla/api/items/IItemStack) | No Description Provided |
 
 
 :::
+
 
