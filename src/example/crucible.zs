@@ -5,7 +5,7 @@ import crafttweaker.api.item.IItemStack;
  .addStep([<item:minecraft:grass_block>], (output as IItemStack, input as IItemStack[], stirs as int) => {
      return output.setDisplayName("Super Dirt 9000!");
  })
- .addStirringStep(5, [<item:minecraft:coarse_dirt>], (output as IItemStack, input as IItemStack[], stirs as int) => {
+ .addStep(5, [<item:minecraft:coarse_dirt>], (output as IItemStack, input as IItemStack[], stirs as int) => {
      return output;
  })
  .addStep(5)
