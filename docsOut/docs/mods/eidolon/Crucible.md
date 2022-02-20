@@ -28,6 +28,33 @@ Crucible.create(name as string, result as IItemStack) as Crucible
 
 :::
 
+:::group{name=remove}
+
+Return Type: void
+
+```zenscript
+Crucible.remove(resourceName as string) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| resourceName | string | No Description Provided |
+
+
+:::
+
+:::group{name=removeAll}
+
+Return Type: void
+
+```zenscript
+// Crucible.removeAll() as void
+
+Crucible.removeAll();
+```
+
+:::
+
 ## Constructors
 
 No Description Provided
