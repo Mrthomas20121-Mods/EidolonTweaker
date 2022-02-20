@@ -31,3 +31,30 @@ Worktable.register(name as string, core as IItemStack[], extra as IItemStack[], 
 
 :::
 
+:::group{name=remove}
+
+Return Type: void
+
+```zenscript
+Worktable.remove(name as string) as void
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| name | string | No Description Provided |
+
+
+:::
+
+:::group{name=removeAll}
+
+Return Type: void
+
+```zenscript
+// Worktable.removeAll() as void
+
+Worktable.removeAll();
+```
+
+:::
+
