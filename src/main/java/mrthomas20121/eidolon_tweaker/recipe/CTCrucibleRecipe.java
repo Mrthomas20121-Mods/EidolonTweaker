@@ -135,11 +135,11 @@ public class CTCrucibleRecipe {
 
     @ZenCodeType.Method
     public CTCrucibleRecipe addStep(IItemStack[] input, CrucibleRecipeFunction function) {
-        return this.addStirringStep(0, input, function);
+        return this.addStep(0, input, function);
     }
 
     @ZenCodeType.Method
-    public CTCrucibleRecipe addStirringStep(int stirs, IItemStack[] input, CrucibleRecipeFunction function) {
+    public CTCrucibleRecipe addStep(int stirs, IItemStack[] input, CrucibleRecipeFunction function) {
         this.stack = function.process(this.stack, input, stirs);
         this.recipe.addCustomStirringStep(stirs, Arrays.stream(input).map(IItemStack::getInternal).toArray());
         return this;
