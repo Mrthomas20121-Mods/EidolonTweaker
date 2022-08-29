@@ -7,7 +7,7 @@ import com.blamejared.crafttweaker.api.item.IItemStack;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import elucent.eidolon.recipe.WorktableRecipe;
 import elucent.eidolon.recipe.WorktableRegistry;
-import mrthomas20121.eidolon_tweaker.RecipeUtil;
+import mrthomas20121.eidolon_tweaker.mixins.AccessorWorktable;
 import net.minecraft.util.ResourceLocation;
 import org.openzen.zencode.java.ZenCodeType;
 
@@ -21,7 +21,7 @@ import java.util.Map;
 @ZenCodeType.Name("mods.eidolon.Worktable")
 @ZenRegister
 public class CTWorktableRecipe {
-    private static final Map<ResourceLocation, WorktableRecipe> recipeMap = RecipeUtil.getWorktableRecipes();
+    private static final Map<ResourceLocation, WorktableRecipe> recipeMap = AccessorWorktable.getRecipes();
 
     private static final List<WorktableRecipe> allRecipes = new ArrayList<>(recipeMap.values());
 

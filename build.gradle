@@ -9,13 +9,20 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
+        maven {
+            name = "spongepowered"
+            url = "https://repo.spongepowered.org/maven"
+        }
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        // MixinGradle:
+        classpath 'org.spongepowered:mixingradle:0.7.+'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
+apply plugin: 'org.spongepowered.mixin'
 
 version = mod_version
 group = 'mrthomas20121.eidolon_tweaker'
@@ -94,6 +101,8 @@ dependencies {
     annotationProcessor 'org.reflections:reflections:0.9.10'
     annotationProcessor mc
     annotationProcessor ct
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 repositories {
@@ -123,12 +132,19 @@ repositories {
     }
 }
 
+mixin {
+    add sourceSets.main, 'mixin.eidolontweaker.refmap.json'
+    config 'mixin.eidolontweaker.json'
+}
+
 jar {
     manifest {
         attributes([
             "Specification-Title": "EidolonTweaker",
             "Specification-Vendor": "Mrthomas20121",
             "Specification-Version": "1",
+            "MixinConfigs": "mixin.eidolontweaker.json",
+            "MixinConnector": "mrthomas20121.eidolon_tweaker.MixinConnector",
             "Implementation-Title": project.name,
             "Implementation-Version": project.version,
             "Implementation-Vendor" :"eidolon_tweaker",
