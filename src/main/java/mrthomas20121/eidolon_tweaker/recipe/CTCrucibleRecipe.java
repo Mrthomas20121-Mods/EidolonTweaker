@@ -7,7 +7,7 @@ import com.blamejared.crafttweaker.api.item.IItemStack;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import elucent.eidolon.recipe.CrucibleRecipe;
 import elucent.eidolon.recipe.CrucibleRegistry;
-import mrthomas20121.eidolon_tweaker.RecipeUtil;
+import mrthomas20121.eidolon_tweaker.mixins.AccessorCrucible;
 import net.minecraft.util.ResourceLocation;
 import org.openzen.zencode.java.ZenCodeType;
 
@@ -21,7 +21,7 @@ import java.util.Map;
 @ZenCodeType.Name("mods.eidolon.Crucible")
 @ZenRegister
 public class CTCrucibleRecipe {
-    private static final Map<ResourceLocation, CrucibleRecipe> recipeMap = RecipeUtil.getCrucibleRecipes();
+    private static final Map<ResourceLocation, CrucibleRecipe> recipeMap = AccessorCrucible.getRecipes();
     public static final List<CrucibleRecipe> allTheRecipes = new ArrayList<>(recipeMap.values());
 
     @ZenCodeType.Method

@@ -1,0 +1,14 @@
+{
+  "package": "mrthomas20121.eidolon_tweaker.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "eidolontweaker.refmap.json",
+  "required": true,
+  "minVersion": "0.8",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "AccessorCrucible",
+    "AccessorWorktable"
+  ]
+}

@@ -31,3 +31,9 @@ Add Crafttweaker support to Eidolon
 	versionRange = "[7.1,)"
 	ordering = "NONE"
 	side = "BOTH"
+[[dependencies.eidolon_tweaker]]
+modId = "eidolon"
+mandatory = true
+versionRange = "[0.2.7,)"
+ordering = "NONE"
+side = "BOTH"

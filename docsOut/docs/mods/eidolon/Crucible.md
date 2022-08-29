@@ -101,12 +101,12 @@ Crucible.addStep(input as IItemStack[], function as CrucibleRecipeFunction) as C
 
 :::
 
-:::group{name=addStirringStep}
+:::group{name=addStep}
 
 Return Type: [Crucible](/mods/eidolon/Crucible)
 
 ```zenscript
-Crucible.addStirringStep(stirs as int, input as IItemStack[], function as CrucibleRecipeFunction) as Crucible
+Crucible.addStep(stirs as int, input as IItemStack[], function as CrucibleRecipeFunction) as Crucible
 ```
 
 | Parameter | Type | Description |
